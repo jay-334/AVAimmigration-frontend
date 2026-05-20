@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': { target: 'http://localhost:5001', changeOrigin: true },
-      '/uploads': { target: 'http://localhost:5001', changeOrigin: true }
+      '/api': { target: 'https://avaimmigration-backend.onrender.com', changeOrigin: true },
+      '/uploads': { target: 'https://avaimmigration-backend.onrender.com', changeOrigin: true }
     }
   }
 })
